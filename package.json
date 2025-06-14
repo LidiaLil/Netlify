@@ -1,6 +1,7 @@
 {
-  "name": "slozhno-sosredotochitsya-fd",
+  "name": "project",
   "version": "1.0.0",
+  "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo 'Привет!'",
@@ -12,19 +13,13 @@
     "fixAll": "npm run format && npm run lintfix",
     "atomize": "atomizer -o ./dist/output.css --watch index.html",
     "build": "gulp build",
-    "dev": "gulp"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/LidiaLil/slozhno-sosredotochitsya-fd.git"
+    "dev": "gulp",
+    "fixAndBuild": "npm run fixAll && npm run build",
+    "lintfixAndPush": "npm run fixAll && git add . && git commit -m 'подготовили к публикации' && git push"
+}, 
   },
   "author": "",
   "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/LidiaLil/slozhno-sosredotochitsya-fd/issues"
-  },
-  "homepage": "https://github.com/LidiaLil/slozhno-sosredotochitsya-fd#readme",
-  "description": "",
   "dependencies": {
     "atomizer": "^3.30.0"
   },
